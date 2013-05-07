@@ -37,7 +37,7 @@ body {
   onsubmit="return false;"
 >
 values:</br>
-<textarea id="text_values" name="values" rows="10" cols="100">10
+<textarea id="text_values" name="values" rows="10" cols="111">10
 20
 30
 30
@@ -50,7 +50,8 @@ values:</br>
   onclick="on_refresh();">
 </form>
 <br/>
-# of bins: <div id="slider">
+# of bins: 
+<div id="slider" style="width:800px;">
   <script>
     $(function() {
       $("#slider").slider({
@@ -87,8 +88,8 @@ function on_refresh() {
 function draw_hist(values, bin_count) {
   var formatCount = d3.format(",.0f");
 
-  var margin = {top: 10, right: 30, bottom: 30, left: 30},
-      width = 960 - margin.left - margin.right,
+  var margin = {top: 30, right: 10, bottom: 30, left: 10},
+      width = 800 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 
   x = d3.scale.linear()
