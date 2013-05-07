@@ -79,7 +79,7 @@ var bin_count;
 function on_refresh() {
   var text_array = text_values.value.split("\n");
   values = text_array.map(function(d) {return +d;});
-  bin_count = typeof bin_count !== 'undefined' ? bin_count : 20;
+  bin_count = typeof bin_count !== 'undefined' ? bin_count : 3;
 
   draw_hist(values, bin_count);
 }
