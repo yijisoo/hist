@@ -1,4 +1,4 @@
 hist
 ====
 
-A simple histogram using d3
+A simple web-based histogram using D3.js.
